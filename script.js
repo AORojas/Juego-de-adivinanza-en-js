@@ -2,8 +2,15 @@ let numeroAzar = Math.floor(Math.random() * 100) + 1;
 
 let numeroEntrada = document.getElementById('numeroEntrada');
 let mensaje = document.getElementById('mensaje');
+let intento = document.getElementById('intento');
+let intentos = 0;
+
 
 function chequearResultado() {
+        intentos += 1;
+        intento.textContent = intentos;
+        document.getElementById('tituloIntentos').style.visibility = 'visible';
+        intento.style.visibility = 'visible';
         let numeroIngresado = parseInt(numeroEntrada.value);
     
         if (isNaN(numeroIngresado) || numeroIngresado < 1 || numeroIngresado > 100) {
@@ -23,3 +30,16 @@ function chequearResultado() {
             mensaje.style.color = 'red';
         }
     }
+
+function reiniciarJuego() {
+    numeroAzar = Math.floor(Math.random() * 100) + 1;
+    numeroEntrada.disabled = false;
+    numeroEntrada.value = '';
+    mensaje.textContent = '¡A Jugar!';
+    mensaje.style.color = 'black';
+    intentos = 0;
+    intento.textContent = intentos;
+    intento.textContent = ''; 
+    document.getElementById('tituloIntentos').style.visibility = 'hidden';
+    intento.style.visibility = 'hidden';
+}

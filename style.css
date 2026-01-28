@@ -20,6 +20,15 @@ body {
     font-size: 16px;
     cursor: pointer;
   }
+
+  #reiniciarBoton {
+    padding: 8px 12px;
+    background-color: #535353;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
   
   #mensaje {
     color: #333;
@@ -27,4 +36,13 @@ body {
     font-size: 18px;
     margin-top: 20px;
   }
+
+#contador {
+    min-height: 70px; 
+}
+
+#tituloIntentos,
+#intento {
+    visibility: hidden;
+}
   
