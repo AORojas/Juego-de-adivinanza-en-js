@@ -1,3 +1,5 @@
+## Juego de adivinanza
+
 Este repositorio contiene el código de un juego de adivinanza implementado en Javascript. El juego consiste en adivinar un número aleatorio generado por el programa en un rango del 1 al 100.
 
 ## Código Javascript
@@ -53,4 +55,4 @@ Si el número ingresado es válido, se compara con el número generado aleatoria
 5.  Dependiendo de tu número ingresado, recibirás mensajes indicando si el número es mayor o menor que el número aleatorio, o si has adivinado correctamente.
 6.  Si adivinas correctamente, el campo de entrada se deshabilitará y se mostrará un mensaje de felicitación.
 
-                                                                                ¡Diviértete jugando¡
+                                                            Diviértete jugando¡
